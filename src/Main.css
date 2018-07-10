@@ -1,9 +1,15 @@
 .pic img {
   margin-top: 20px;
   height: 400px;
-  width: 600px; }
+  width: 600px;
+  box-shadow: 4px 4px 4px 4px #522D80; }
+
+.pic img:hover {
+  transform: rotateY(180deg);
+  transition: 1s; }
 
 .pic p {
   margin-top: 10px;
   font-size: 20pt;
+  text-shadow: 1px 1px #F66733;
   color: white; }

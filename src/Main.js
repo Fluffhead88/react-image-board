@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './Main.css';
 
+// ids, images, and captions for 10 pictures of Col Bruce and his zambi team
+
 let imageBoard = [
   {
   id: 1,
@@ -47,6 +49,7 @@ let imageBoard = [
 
 class Main extends Component{
   render(){
+    // iterates over the array of objects including images and captions by key and puts them within the column
     let teamZambi = imageBoard.map(function(zambi){
       return(
       <div key={zambi.id} className="col-12 col-md pic">
@@ -57,6 +60,7 @@ class Main extends Component{
   });
     return(
       <div className="container">
+        {/* centers content and inserts the interated over objects into the hmtl*/}
         <div className="row no gutters justify-content-center">
             <main>
               {teamZambi}
